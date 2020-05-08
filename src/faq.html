@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Document</title>
+ <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+ <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+ <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+   <div class="container">
+    <a href="./index.html" class="navbar-brand"><img src="./img/logo.svg" alt="logo" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-nav"
+     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="collapse-nav">
+     <ul class="navbar-nav ">
+      <li class="nav-item mx-2"><a href="./index.html" class="nav-link nav-link-c">Inicio</a></li>
+      <li class="nav-item mx-2"><a href="./cursos.html" class="nav-link nav-link-c">Cursos</a></li>
+      <li class="nav-item mx-2"><a href="./faq.html" class="nav-link nav-link-c">Faq</a></li>
+      <li class="nav-item mx-2"><a href="contacto.html" class="nav-link nav-link-c">Contacto</a></li>
+      <li class="nav-item ml-3">
+       <a href="#" class="nav-link btn btn-primary" data-toggle="modal" data-target="#login-register"
+        data-mdtype="login" id="nav-btn">Iniciar Sesion</a>
+      </li>
+     </ul>
+    </div>
+    </ul>
+  </nav>
+  <!-- !Modal -->
+  <div class="modal fade" id="login-register" tabindex="-1" role="dialog" aria-labelledby="Login and Register"
+   aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+     <div class="modal-header d-md-none">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       <span aria-hidden="true">&times;</span>
+      </button>
+     </div>
+     <div class="modal-body" style="padding: 0; margin: 0; position: relative;">
+      <div class="container">
+       <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center px-5">
+         <h2 class="modal__title my-3"> ¡Inicia Sesión Ya!</h2>
+         <form action="POST">
+          <div class="form-group">
+           <input type="text" name="username" id="" class="form-control form-control-lg my-2" placeholder="Email"
+            required>
+           <input type="password" name="password" id="" class="form-control form-control-lg my-2"
+            placeholder="Contraseña" required>
+           <div class="row my-2 px-4">
+            <div class="form-check">
+             <input class="form-check-input" type="checkbox" value="recordarme" id="modal-check">
+             <label class="form-check-label modal-check-label" for="modal-check">
+              Recordarme
+             </label>
+            </div>
+            <div class="modal-link-cont ml-auto">
+             <a href="#" class="modal__link">¿Olvidaste tu contraseña?</a>
+            </div>
+           </div>
+           <button type="submit" class="btn btn-primary my-3 px-5 modal-btn">Iniciar Sesion</button>
+          </div>
+         </form>
+         <p class="modal__subtext justify-self-end">¿Todavía no te has registrado? <a href="#" class="modal-change"
+           data-mdtype="register">Crea tu cuenta
+           aquí.</a></p>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block" style="padding-right: 0;"> <img src="./img/modal-img.jpg" alt=""
+          class="modal__img" style="border-radius: 0 0.3rem 0.3rem 0;">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+          style="position: absolute; top: 2%; right: 3%; transform: translate(2%, -3%);">
+          <span style="color: wheat;" aria-hidden="true">&times;</span>
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </header>
+ <main>
+  <!-- ! HERO SECTION -->
+  <section class="hero hero--pages">
+   <div
+    class="caption caption--pages text-center d-flex justify-content-center align-items-center flex-column text-light">
+    <h1 class="hero__title text-wrap my-3">FAQ</h1>
+   </div>
+  </section>
+  <!-- !FAQ SECTION  -->
+  <section class="faq container py-5">
+   <div class="faq__group my-5">
+    <h2 class="faq__title">Reservas & Disponibilidad</h2>
+    <div class="faq__item">
+     <h3 class="faq__item-title">1. ¿Cómo reservo un lugar?</h3>
+     <p class="faq__item-p"> Para reservar un lugar, confirme su reserva siguiendo este enlace: <a href="#">página de
+       reservas </a></p>
+    </div>
+    <div class="faq__item">
+     <h3 class="faq__item-title">2. ¿Cuál es el perfil de estudiante típico en un curso Let’s?</h3>
+     <p class="faq__item-p"> Nuestros cursos están formados por adultos de todas las edades y nacionalidades, desde
+      principiantes en adelante. Para
+      la mayoría de los cursos, el rango de edad promedio es de 20 a 40 años, sin embargo, muchos estudiantes más
+      jóvenes y
+      mayores se unen a nuestra escuela.</p>
+    </div>
+    <div class="faq__item">
+     <h3 class="faq__item-title">3. ¿Qué tan pronto debo inscribirme?</h3>
+     <p class="faq__item-p">Cuanto antes mejor, porque eso asegura que tenemos el número correcto. Si no tenemos el
+      número mínimo de estudiantes
+      para los cursos, es posible que tengamos que cancelar el curso, en cuyo caso el curso que desea puede ser
+      eliminado del
+      sitio web.</p>
+    </div>
+    <div class="faq__item">
+     <h3 class="faq__item-title">4. ¿Puedo unirme a una clase en la segunda semana?</h3>
+     <p class="faq__item-p">Sí, si hay espacio en el curso, podemos tomar reservas para los estudiantes que deseen
+      unirse a la clase en la segunda
+      semana, sin embargo, no habrá descuento en el precio. Deberá llamarnos para verificar la disponibilidad. Más allá
+      de la
+      segunda semana, no permitimos que ningún alumno se una al curso, ya que esto es demasiado perjudicial para el
+      programa
+      de aprendizaje.</p>
+    </div>
+    <div class="faq__item">
+     <h3 class="faq__item-title">5. ¿Cómo sé si hay plazas disponibles en un curso?</h3>
+     <p class="faq__item-p">Si un curso no tiene plazas disponibles, se mostrará un mensaje "este curso ahora está
+      lleno".</p>
+    </div>
+    <div class="faq__item">
+     <h3 class="faq__item-title">6. ¿Cuál es el número mínimo de estudiantes en un curso?</h3>
+     <p class="faq__item-p">Requerimos un número mínimo de estudiantes para ejecutar un curso grupal.
+      En el caso improbable de que no se cumpla el número mínimo, podemos retrasar la fecha de inicio del curso en una
+      semana,
+      fusionar su curso con otro o, si eso no es posible, reducir la duración del curso a 8 semanas.
+      Si ninguna de las opciones anteriores es práctica, puede optar por conservar su crédito y diferir al siguiente
+      curso o
+      solicitar que se le reembolse por completo.</p>
+    </div>
+    <div class="faq__item">
+     <h3 class="faq__item-title">7. ¿Cómo sé mi nombre de usuario y contraseña?</h3>
+     <p class="faq__item-p">La primera vez que comienza a hacer una reserva, nuestro sitio web crea automáticamente un
+      nombre de usuario y
+      contraseña. Su nombre de usuario es la primera parte de su dirección de correo electrónico antes del signo @. Es
+      sensible a mayúsculas y minúsculas la forma en que lo ingresó y la contraseña predeterminada es
+      aprendamosIngles-1234</p>
+    </div>
+    <div class="faq__item">
+     <h3 class="faq__item-title">8. ¿Puedo obtener un recibo?</h3>
+     <p class="faq__item-p">Un correo electrónico confirmando su reserva y pago se envía automáticamente a la dirección
+      que nos proporcionó en el
+      momento de la reserva. Si también desea un recibo de IVA, vaya a nuestra página de Soporte e inicie sesión como se
+      indicó anteriormente. Una vez que haya iniciado sesión, verá un enlace llamado "mis reservas" y desde allí podrá
+      imprimir un recibo de IVA.</p>
+    </div>
+    <div class="faq__item">
+     <h3 class="faq__item-title">9. ¿Puedo obtener un recibo?</h3>
+     <p class="faq__item-p">Un correo electrónico confirmando su reserva y pago se envía automáticamente a la dirección
+      que nos proporcionó en el
+      momento de la reserva. Si también desea un recibo de IVA, vaya a nuestra página de Soporte e inicie sesión como se
+      indicó anteriormente. Una vez que haya iniciado sesión, verá un enlace llamado "mis reservas" y desde allí podrá
+      imprimir un recibo de IVA.</p>
+    </div>
+   </div>
+   <div class="faq__group my-5">
+    <h2 class="faq__title"> Información de los cursos</h2>
+    <div class="faq__item">
+     <h3 class="faq__item-title">1. ¿Cómo reservo un lugar?</h3>
+     <p class="faq__item-p"> Para reservar un lugar, confirme su reserva siguiendo este enlace: <a href="#">página de
+       reservas </a></p>
+    </div>
+    <div class="faq__item">
+     <h3 class="faq__item-title">2. ¿Cuál es el perfil de estudiante típico en un curso Let’s?</h3>
+     <p class="faq__item-p"> Nuestros cursos están formados por adultos de todas las edades y nacionalidades, desde
+      principiantes en adelante. Para
+      la mayoría de los cursos, el rango de edad promedio es de 20 a 40 años, sin embargo, muchos estudiantes más
+      jóvenes y
+      mayores se unen a nuestra escuela.</p>
+    </div>
+    <div class="faq__item">
+     <h3 class="faq__item-title">3. ¿Qué tan pronto debo inscribirme?</h3>
+     <p class="faq__item-p">Cuanto antes mejor, porque eso asegura que tenemos el número correcto. Si no tenemos el
+      número mínimo de estudiantes
+      para los cursos, es posible que tengamos que cancelar el curso, en cuyo caso el curso que desea puede ser
+      eliminado del
+      sitio web.</p>
+    </div>
+    <div class="faq__item">
+     <h3 class="faq__item-title">4. ¿Puedo unirme a una clase en la segunda semana?</h3>
+     <p class="faq__item-p">Sí, si hay espacio en el curso, podemos tomar reservas para los estudiantes que deseen
+      unirse a la clase en la segunda
+      semana, sin embargo, no habrá descuento en el precio. Deberá llamarnos para verificar la disponibilidad. Más allá
+      de la
+      segunda semana, no permitimos que ningún alumno se una al curso, ya que esto es demasiado perjudicial para el
+      programa
+      de aprendizaje.</p>
+    </div>
+    <div class="faq__item">
+     <h3 class="faq__item-title">5. ¿Cómo sé si hay plazas disponibles en un curso?</h3>
+     <p class="faq__item-p">Si un curso no tiene plazas disponibles, se mostrará un mensaje "este curso ahora está
+      lleno".</p>
+    </div>
+    <div class="faq__item">
+     <h3 class="faq__item-title">6. ¿Cuál es el número mínimo de estudiantes en un curso?</h3>
+     <p class="faq__item-p">Requerimos un número mínimo de estudiantes para ejecutar un curso grupal.
+      En el caso improbable de que no se cumpla el número mínimo, podemos retrasar la fecha de inicio del curso en una
+      semana,
+      fusionar su curso con otro o, si eso no es posible, reducir la duración del curso a 8 semanas.
+      Si ninguna de las opciones anteriores es práctica, puede optar por conservar su crédito y diferir al siguiente
+      curso o
+      solicitar que se le reembolse por completo.</p>
+    </div>
+   </div>
+  </section>
+ </main>
+ <!-- !Footer -->
+ <footer class="bg-dark py-5 footer">
+  <div class="container">
+   <div class="row">
+    <div
+     class="d-flex justify-content-center align-items-center my-2 col-12 col-sm-12 text-sm-left mb-sm-5 col-md-4 justify-content-md-start col-lg-2 footer__border footer__border--1">
+     <a href="./index.html"><img src="./img/logo.svg" alt="logo" class="footer__logo" /></a></div>
+    <div class="text-center my-2 col-12 col-sm-6 text-sm-left col-md-4 col-lg-2 footer__border footer__border--2">
+     <h4 class="footer__title">Páginas</h4>
+     <div class="footer__content mt-3 mb-4">
+      <a href="./cursos.html" class="footer__link">
+       <p>Cursos</p>
+      </a>
+      <a href="./faq" class="footer__link">
+       <p>Faq</p>
+      </a>
+      <a href="./contacto.html" class="footer__link">
+       <p>Contacto</p>
+      </a>
+     </div>
+    </div>
+    <div class="text-center my-2 col-12 col-sm-6 text-sm-left col-md-4 col-lg-2 footer__border footer__border--3">
+     <h4 class="footer__title">Legal</h4>
+     <div class="footer__content mt-3 mb-4">
+      <a href="#" class="footer__link">
+       <p>Terminos y Condiciones</p>
+      </a>
+      <a href="#" class="footer__link">
+       <p>Política de Privacidad</p>
+      </a>
+      <a href="#" class="footer__link">
+       <p>Política de Cookies</p>
+      </a>
+     </div>
+    </div>
+    <div class="text-center my-2  col-12 col-sm-12 text-sm-left col-lg-6 footer__border footer__border--4">
+     <h4 class="footer__title">Sobre Lets</h4>
+     <div class="footer__content mt-3 mb-4">
+      <p class="text-justify">Let’s es una de las mejores academias de inglés de Barcelona. Actualmente tenemos
+       más de 1,000
+       estudiantes
+       que estudian
+       en Barcelona y recientemente hemos abierto nuevas escuelas en el centro de Canarias y en Valencia. Estamos
+       enseñando
+       todos los niveles del Marco Común Europeo (MCER) con un equipo de alrededor de 35 profesores, todos ellos
+       hablantes
+       nativos con experiencia calificados en la enseñanza del inglés como lengua extranjera.
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </footer>
+ <!-- !Scripts -->
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+ <script src="../bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+ <script>
+  document.querySelector(".modal-dialog").addEventListener("click", function (e) {
+   const clicked = e.target;
+   if (clicked.classList.value.includes('modal-change')) {
+    const type = clicked.dataset.mdtype;
+    var title, checkValue, checkLabel, link, btn, subtext;
+    if (type == 'login') {
+     title = "¡Inicia Sesión Ya!";
+     checkValue = "recordarme";
+     checkLabel = "Recordarme";
+     link = `<a href="#" class="modal__link ml - auto">¿Olvidaste tu contraseña?</a>`;
+     btn = "Iniciar Sesión";
+     subtext = `¿Todavía no te has registrado? <a href="#"
+                      data-mdtype="register" class="modal-change">Crea tu cuenta
+                      aquí.</a>`;
+    } else {
+     title = "Registro";
+     checkValue = "privacidad";
+     checkLabel = "Acepto la politica de privacidad";
+     link = "";
+     btn = "Registrarse";
+     subtext = `¿Ya tienes cuenta? <a href="#"
+                    class="modal-change" data-mdtype="login">Inicia sesión
+                      aquí.</a>`;
+    }
+    // Set correct HTML
+    document.querySelector('.modal__title').innerHTML = title;
+    document.querySelector('#modal-check').value = checkValue;
+    document.querySelector('.modal-check-label').innerHTML = checkLabel;
+    document.querySelector('.modal-link-cont').innerHTML = link;
+    document.querySelector('.modal-btn').innerHTML = btn;
+    document.querySelector('.modal__subtext').innerHTML = subtext;
+   }
+  });
+ </script>
+</body>
+
+</html>

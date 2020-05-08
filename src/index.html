@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container">
+        <a href="./index.html" class="navbar-brand"><img src="./img/logo.svg" alt="logo" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-nav"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapse-nav">
+          <ul class="navbar-nav ">
+            <li class="nav-item mx-2"><a href="./index.html" class="nav-link nav-link-c">Inicio</a></li>
+            <li class="nav-item mx-2"><a href="./cursos.html" class="nav-link nav-link-c">Cursos</a></li>
+            <li class="nav-item mx-2"><a href="./faq.html" class="nav-link nav-link-c">Faq</a></li>
+            <li class="nav-item mx-2"><a href="contacto.html" class="nav-link nav-link-c">Contacto</a></li>
+            <li class="nav-item ml-3">
+              <a href="#" class="nav-link btn btn-primary" data-toggle="modal" data-target="#login-register"
+                data-mdtype="login" id="nav-btn">Iniciar Sesion</a>
+            </li>
+          </ul>
+        </div>
+        </ul>
+    </nav>
+    <!-- !Modal -->
+    <div class="modal fade" id="login-register" tabindex="-1" role="dialog" aria-labelledby="Login and Register"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-md-none">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="padding: 0; margin: 0; position: relative;">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center px-5">
+                  <h2 class="modal__title my-3"> ¡Inicia Sesión Ya!</h2>
+                  <form action="POST">
+                    <div class="form-group">
+                      <input type="text" name="username" id="" class="form-control form-control-lg my-2"
+                        placeholder="Email" required>
+                      <input type="password" name="password" id="" class="form-control form-control-lg my-2"
+                        placeholder="Contraseña" required>
+                      <div class="row my-2 px-4">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="recordarme" id="modal-check">
+                          <label class="form-check-label modal-check-label" for="modal-check">
+                            Recordarme
+                          </label>
+                        </div>
+                        <div class="modal-link-cont ml-auto">
+                          <a href="#" class="modal__link">¿Olvidaste tu contraseña?</a>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary my-3 px-5 modal-btn">Iniciar Sesion</button>
+                    </div>
+                  </form>
+                  <p class="modal__subtext justify-self-end">¿Todavía no te has registrado? <a href="#"
+                      class="modal-change" data-mdtype="register">Crea tu cuenta
+                      aquí.</a></p>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block" style="padding-right: 0;"> <img src="./img/modal-img.jpg" alt=""
+                    class="modal__img" style="border-radius: 0 0.3rem 0.3rem 0;">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                    style="position: absolute; top: 2%; right: 3%; transform: translate(2%, -3%);">
+                    <span style="color: wheat;" aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- ! HERO SECTION -->
+    <section class="hero">
+      <div class="caption text-center d-flex justify-content-center align-items-center flex-column text-light">
+        <h3 class="hero__subtitle my-2">Bienvenido a Let’s!</h3>
+        <h3 class="hero__subtitle my-2">Cursos de ingles en Madrid, Barcelona y Toledo</h3>
+        <h1 class="hero__title text-wrap my-3">Ahora con cursos en live streaming a los que te
+          puedes
+          unir desde cualquier lugar</h1>
+        <a class="btn btn-outline-primary my-3 px-5 btn-lg hero__btn" href="./cursos.html" role="button">Ver
+          Cursos</a>
+      </div>
+    </section>
+    <!-- !WHAT WE DO SECTION -->
+    <section class="wwdo py-3">
+      <div class="container wwdo-raise">
+        <div class="row my-3">
+          <div class="card-deck md-column">
+            <div class="card mb-2">
+              <img src="./img/bienvenido.jpg" class="card-img-top" alt="bienvenido">
+              <div class="card-body">
+                <h3 class="card-title  text-center">¡Bienvenido a Let’s!
+                  ¿listo para aprender?</h3>
+                <p class="card-text text-justify">Más de mil estudiantes aprenden ingles cada día con Let’s!. Ahora,
+                  debido a la
+                  situación,
+                  estan
+                  aprendiendo online,
+                  igual que si estuvieran en la escuela. Estos cursos son organizados por nuestros profesores y llevan a
+                  nuestros
+                  alumnos
+                  de principiantes a maestros</p>
+              </div>
+            </div>
+            <div class="card mb-2">
+              <img src="./img/aprende-casa.jpg" class="card-img-top" alt="bienvenido">
+              <div class="card-body">
+                <h3 class="card-title  text-center">Aprende desde casa a tu propio ritmo</h3>
+                <p class="card-text text-justify">Participa en tu curso desde casa. Es una de las mayores ventajas de
+                  pertenecer a nuestra escuela, solo necesitas un
+                  ordenador o table con cámara y micrófono. Bueno además de internet, por quien no tiene hoy en dia?
+                  ¡Aprovecha tus ratos
+                  libres para aprender ingles con nosotros!</p>
+              </div>
+            </div>
+            <div class="card mb-2">
+              <img src="./img/estudiantes.jpg" class="card-img-top" alt="bienvenido">
+              <div class="card-body">
+                <h3 class="card-title  text-center">Únete a más de 9.000 estudiantes</h3>
+                <p class="card-text text-justify">Nuestros estudiantes se divierten tanto aprendiendo como nosotros nos
+                  divertimos enseñando. Nuestros expertos y
+                  profesores son todos ingleses nativos y están perfectamente cualificados para enseñar inglés a todos
+                  los niveles,
+                  incluso los más avanzados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-around mx-auto py-3" style="width: 70%;">
+          <a class="btn btn-primary my-3 px-5 btn-lg" href="./cursos.html" role="button">Ver Cursos</a>
+          <a class="btn btn-primary my-3 px-5 btn-lg" href="./conta" role="button">Contacto</a>
+        </div>
+      </div>
+    </section>
+    <!-- !Zoom Banner Section -->
+    <section class="banner-zoom bg-light py-5">
+      <div class="container  d-flex flex-column justify-content-center align-items-center text-center my-3">
+        <img src="./img/laptop-conference.jpg" alt="" class="mb-5 zoom-img">
+        <p class="zoom-p">Let’s es un partner profesional de Zoom</p>
+        <p class="zoom-p">Solamente necesitas un portatil, pc o tableta con cámara y microfono
+          integrados o externos.</p>
+      </div>
+    </section>
+    <!-- !Testimonials Section -->
+    <section class="testimonials py-5">
+      <div class="container my-5 ">
+        <div class="row md-column">
+          <div class="col mx-4 my-2 client-card">
+            <div class="row">
+              <img src="./img/quote.svg" alt="" class="client__quote">
+              <p class="client__p text-justify">Sin duda, una de las mejores academias en las que he estado.
+                Método 100%
+                eficaz para
+                aprender inglés y llevarlo a la
+                práctica desde el primer día.</p>
+            </div>
+            <div class="row align-items-center my-3">
+              <img src="./img/client-1.jpg" alt="" class="client-img">
+              <h5 class="client-name ml-3">MARTA SANCHEZ</h5>
+            </div>
+          </div>
+          <div class="col mx-4 my-2 client-card">
+            <div class="row">
+              <img src="./img/quote.svg" alt="" class="client__quote">
+              <p class="client__p text-justify"> Me lo recomendó una amiga y ha sido una sorpresa: aprendo
+                rápido. Ojalá
+                me hubiera
+                apuntado antes, he aprendido desde el
+                primer día.</p>
+            </div>
+            <div class="row align-items-center my-3">
+              <img src="./img/client-2.jpg" alt="" class="client-img">
+              <h5 class="client-name ml-3">ALEX TORRALBA</h5>
+            </div>
+          </div>
+          <div class="col mx-4 my-2 client-card">
+            <div class="row">
+              <img src="./img/quote.svg" alt="" class="client__quote">
+              <p class="client__p text-justify">Cienco e strellas. Ir a clase es adictivo! He aprendido mucho
+                en 2 años
+                gracias a la
+                metodología, los materiales y los
+                profesores.</p>
+            </div>
+            <div class="row align-items-center my-3">
+              <img src="./img/client-3.jpg" alt="" class="client-img">
+              <h5 class="client-name ml-3">ALEX TORRALBA</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !Section Steps? -->
+    <section class="steps bg-light py-5">
+      <div class="container my-5">
+        <div class="card-deck md-column">
+          <div class="card">
+            <img src="./img/comment.svg" class="steps-icon" alt="bienvenido">
+            <div class="card-body text-center">
+              <h3 class="card-title">Interacciona con estudiantes y profesores</h3>
+              <p class="card-text">Emulamos un entorno de clase física con interacciones ricas entre
+                alumnos y profesores.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/book.svg" class="steps-icon" alt="bienvenido">
+            <div class="card-body text-center">
+              <h3 class="card-title">Interacciona con estudiantes y profesores</h3>
+              <p class="card-text">Emulamos un entorno de clase física con interacciones ricas entre
+                alumnos y profesores.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/play.svg" class="steps-icon" alt="bienvenido">
+            <div class="card-body text-center">
+              <h3 class="card-title">Interacciona con estudiantes y profesores</h3>
+              <p class="card-text">Emulamos un entorno de clase física con interacciones ricas entre
+                alumnos y profesores.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- !metrics -->
+    <section class="metrics py-5">
+      <div class="container my-5">
+        <div class="card-deck metrics-deck">
+          <div class="card metrics-card metrics-card-one">
+            <div class="card-body text-center">
+              <h3 class="card-title metrics-n">1120</h3>
+              <p class="card-text metrics-title">Estudiantes</p>
+            </div>
+          </div>
+          <div class="card metrics-card metrics-card-one">
+            <div class="card-body text-center">
+              <h3 class="card-title metrics-n">2360</h3>
+              <p class="card-text metrics-title">Reseñas</p>
+            </div>
+          </div>
+          <div class="card metrics-card metrics-card-two">
+            <div class="card-body text-center">
+              <h3 class="card-title metrics-n">152</h3>
+              <p class="card-text metrics-title">Clases de Inglés</p>
+            </div>
+          </div>
+          <div class="card metrics-card metrics-card-two">
+            <div class="card-body text-center">
+              <h3 class="card-title metrics-n">45</h3>
+              <p class="card-text metrics-title">Profesores</p>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer class="bg-dark py-5 footer">
+    <div class="container">
+      <div class="row">
+        <div
+          class="d-flex justify-content-center align-items-center my-2 col-12 col-sm-12 text-sm-left mb-sm-5 col-md-4 justify-content-md-start col-lg-2 footer__border footer__border--1">
+          <a href="./index.html"><img src="./img/logo.svg" alt="logo" class="footer__logo" /></a></div>
+        <div class="text-center my-2 col-12 col-sm-6 text-sm-left col-md-4 col-lg-2 footer__border footer__border--2">
+          <h4 class="footer__title">Páginas</h4>
+          <div class="footer__content mt-3 mb-4">
+            <a href="./cursos.html" class="footer__link">
+              <p>Cursos</p>
+            </a>
+            <a href="./faq" class="footer__link">
+              <p>Faq</p>
+            </a>
+            <a href="./contacto.html" class="footer__link">
+              <p>Contacto</p>
+            </a>
+          </div>
+        </div>
+        <div class="text-center my-2 col-12 col-sm-6 text-sm-left col-md-4 col-lg-2 footer__border footer__border--3">
+          <h4 class="footer__title">Legal</h4>
+          <div class="footer__content mt-3 mb-4">
+            <a href="#" class="footer__link">
+              <p>Terminos y Condiciones</p>
+            </a>
+            <a href="#" class="footer__link">
+              <p>Política de Privacidad</p>
+            </a>
+            <a href="#" class="footer__link">
+              <p>Política de Cookies</p>
+            </a>
+          </div>
+        </div>
+        <div class="text-center my-2  col-12 col-sm-12 text-sm-left col-lg-6 footer__border footer__border--4">
+          <h4 class="footer__title">Sobre Lets</h4>
+          <div class="footer__content mt-3 mb-4">
+            <p class="text-justify">Let’s es una de las mejores academias de inglés de Barcelona. Actualmente tenemos
+              más de 1,000
+              estudiantes
+              que estudian
+              en Barcelona y recientemente hemos abierto nuevas escuelas en el centro de Canarias y en Valencia. Estamos
+              enseñando
+              todos los niveles del Marco Común Europeo (MCER) con un equipo de alrededor de 35 profesores, todos ellos
+              hablantes
+              nativos con experiencia calificados en la enseñanza del inglés como lengua extranjera.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- !Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+  <script src="../bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelector(".modal-dialog").addEventListener("click", function (e) {
+      const clicked = e.target;
+      if (clicked.classList.value.includes('modal-change')) {
+        const type = clicked.dataset.mdtype;
+        var title, checkValue, checkLabel, link, btn, subtext;
+        if (type == 'login') {
+          title = "¡Inicia Sesión Ya!";
+          checkValue = "recordarme";
+          checkLabel = "Recordarme";
+          link = `<a href="#" class="modal__link ml - auto">¿Olvidaste tu contraseña?</a>`;
+          btn = "Iniciar Sesión";
+          subtext = `¿Todavía no te has registrado? <a href="#"
+                      data-mdtype="register" class="modal-change">Crea tu cuenta
+                      aquí.</a>`;
+        } else {
+          title = "Registro";
+          checkValue = "privacidad";
+          checkLabel = "Acepto la politica de privacidad";
+          link = "";
+          btn = "Registrarse";
+          subtext = `¿Ya tienes cuenta? <a href="#"
+                    class="modal-change" data-mdtype="login">Inicia sesión
+                      aquí.</a>`;
+        }
+        // Set correct HTML
+        document.querySelector('.modal__title').innerHTML = title;
+        document.querySelector('#modal-check').value = checkValue;
+        document.querySelector('.modal-check-label').innerHTML = checkLabel;
+        document.querySelector('.modal-link-cont').innerHTML = link;
+        document.querySelector('.modal-btn').innerHTML = btn;
+        document.querySelector('.modal__subtext').innerHTML = subtext;
+      }
+    });
+  </script>
+</body>
+
+</html>

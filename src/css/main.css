@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+:root {
+  --grey-shadow: 0px 0px 15px rgba(177, 177, 177, 0.5);
+  --boostrap-primary: #0275d8;
+  --footer-border: 1px solid white;
+  --grey-text: #5C5C5C;
+}
+
+
+/* !general */
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+
+/* !nav */
+.nav-item .nav-link {
+  color: white;
+}
+
+#nav-btn {
+  color: white;
+}
+
+.navbar {
+  min-height: 10vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+.nav-link {
+  letter-spacing: 0.05rem;
+  font-weight: 600;
+}
+.nav-link-c {
+  color: white !important;
+  transition: color 250ms ease-in-out;
+}
+.nav-link-c:hover {
+  color: var(--boostrap-primary) !important; 
+}
+/* !Modal */
+
+.modal__img {
+  height: 100%;
+  width: 100%;
+}
+
+.modal__title {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.modal__subtext {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+/* !HERO */
+.hero {
+  min-height: 100vh;
+  margin-top: -10vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/hero-1.jpg') top/cover no-repeat;
+  padding-top: 10vh;
+}
+.caption {
+  height: 90vh;
+}
+.caption h1 {
+  font-weight: 700;
+}
+
+.caption .btn {
+  border-width: medium;
+  border-radius: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+.hero__title {
+  width: 50%;
+}
+
+.hero__btn {
+  border-radius: 5px !important;
+}
+
+/* Pages Hero */
+
+.hero--pages {
+  min-height: 60vh;
+}
+
+.caption--pages {
+  height: calc(70vh - 10vh);
+}
+
+/*! What We Do */
+
+.wwdo .card-title {
+  letter-spacing: 0.01rem;
+  line-height: 2.2rem;
+  font-weight: 600;
+}
+
+.wwdo-raise {
+  margin-top: -10vh;
+}
+
+.wwdo-raise .card {
+    box-shadow: var(--grey-shadow);
+}
+
+/* Zoom */
+.zoom-p {
+  font-size: 1.5rem;
+}
+
+.zoom-img {
+  height: auto;
+  max-width: 100%;
+}
+
+
+/* !Testimonials */
+.client__p {
+  color: #5C5C5C;
+}
+
+.client-name {
+  font-weight: 700;
+}
+
+
+/* !Steps*/
+
+.steps .card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+.steps-icon {
+  height: 50%;
+  width: auto;
+}
+
+
+/* !MEtrics  */
+
+.metrics-n {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--boostrap-primary);
+  border-bottom: solid 2px #E7E7E7;
+  padding-bottom: 10px;
+}
+
+.metrics-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+
+/* !Footer */
+
+.footer {
+  color: white;
+}
+
+.footer__title {
+  font-weight: 700;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: white;
+  transition: color 250ms ease-in;
+}
+.footer__link:hover {
+  color: var(--boostrap-primary);
+  text-decoration: none;
+}
+
+.footer__logo {
+  height: 100px;
+  width: auto;
+}
+
+.footer__content {
+  font-size: 0.8rem;
+}
+
+.footer__border {
+  border-right: var(--footer-border);
+}
+.footer__border--4 {
+  border: none;
+}
+
+@media screen and (max-width: 992px) {
+  .footer__border--3 {
+  border: none;
+}
+  .footer__border--4 {
+  border-top: var(--footer-border);
+  padding-top: 0.5rem;
+}
+}
+@media screen and (max-width: 768px) {
+    .footer__border {
+      border: none;
+    }
+}
+@media screen and (max-width: 576px) {
+      .footer__border {
+      border-bottom: var(--footer-border);
+    }
+}
+/* !FAQ PAGE */
+
+.faq__title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.faq__item {
+  margin: 1.5rem 0;
+}
+.faq__item-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.faq__item-p {
+  color: var(--grey-text);
+  font-size: 1rem;
+}
+
+
+/* !MEDIA QUERIES */
+@media screen and (max-width: 1000px) {
+    .metrics-card {
+    min-width: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .md-column {
+    flex-direction: column !important;
+  }
+  .metrics-card {
+    min-width: auto;
+  }
+  .client-card {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .hero {
+    min-height: 110vh;
+  }
+  .hero--pages {
+  min-height: 60vh;
+}
+  .hero__title {
+    width: 90%;
+  }
+
+}
+@media screen and (max-width: 650px) {
+  .wwdo-raise {
+margin-top: 0;
+  }
+
+
+}
+
+@media screen and (max-width: 400px) {
+  .hero__title {
+    width: 90%;
+  }
+}
+
+@media screen and (min-height:620px) {
+
+  .wwdo {
+    margin-top: 1rem;
+  }
+  
+}
+
+@media screen and (max-height:740px) {
+    .hero {
+    padding-top: calc(10vh + 5rem);
+  }
+}
+
+@media screen and (max-height:600px) {
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+  .hero__title {
+    font-size: 2rem;
+  }
+
+}
