@@ -16,6 +16,25 @@ body {
     border: none;
 }
 
+.pages-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.pages-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.pages-txt {
+  color: var(--grey-text);
+  font-size: 1rem;
+  text-align: justify;
+}
+.pages-txt--black {
+  color: black;
+}
+
 
 /* !nav */
 .nav-item .nav-link {
@@ -222,24 +241,23 @@ body {
 }
 /* !FAQ PAGE */
 
-.faq__title {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-}
 .faq__item {
   margin: 1.5rem 0;
 }
-.faq__item-title {
-  font-size: 1.5rem;
-  font-weight: 400;
+
+/* !Course Page */
+
+.list-group-item {
+  border-right: none;
+  border-left: none;
 }
 
-.faq__item-p {
-  color: var(--grey-text);
-  font-size: 1rem;
+.bold {
+  font-weight: 600;
 }
-
+.dia {
+  text-transform: capitalize;
+}
 
 /* !MEDIA QUERIES */
 @media screen and (max-width: 1000px) {
@@ -272,6 +290,9 @@ body {
 @media screen and (max-width: 650px) {
   .wwdo-raise {
 margin-top: 0;
+  }
+  .modal__sm-txt {
+    font-size: 0.8rem;
   }
 
 
